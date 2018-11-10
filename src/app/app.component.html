@@ -1,20 +1,347 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<a name="top" style="height:0; position:absolute; top:0;" id="top-anchor"></a>
+<div id="body-wrap">
+  <div id="wrap">
+    <header class="dark-div">
+      <div id="top-nav" class="topnav-dark fixed-nav layout-4">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle off-canvas-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-reorder fa-bars fa-lg"></i>
+              </button>
+              <a class="logo" href="https://www.voxxed.com" title="Get Involved - Voxxed"><img
+                src="https://s3-eu-west-1.amazonaws.com/www.voxxed/VoxxedLogo.jpg" alt="Get Involved - Voxxed"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="main-menu collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right hidden-xs user_submit">
+                <li class="main-menu-item">
+                  <a class="submit-video" href="#" data-toggle="modal" data-target="#submitModal"><span class="btn btn-xs bgcolor1">Submit Content</span></a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav nav-ul-menu  hidden-xs">
+                <li id="nav-menu-item-581"
+                    class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a
+                  href="https://www.voxxed.com/" class="menu-link  main-menu-link">Home </a></li>
+                <li id="nav-menu-item-17557"
+                    class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent dropdown">
+                  <a href="/categories" class="menu-link dropdown-toggle disabled main-menu-link" data-toggle="dropdown">Categories <i
+                    class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu menu-depth-1">
+                    <li id="nav-menu-item-17547"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/java/" class="menu-link  sub-menu-link">Java Language </a></li>
+                    <li id="nav-menu-item-17548"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/m_c/" class="menu-link  sub-menu-link">Methodology &#038; Culture </a></li>
+                    <li id="nav-menu-item-17549"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/cloud/" class="menu-link  sub-menu-link">Cloud </a></li>
+                    <li id="nav-menu-item-17555"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/server/" class="menu-link  sub-menu-link">Server Side Java </a></li>
+                    <li id="nav-menu-item-17550"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/prog/" class="menu-link  sub-menu-link">Programming Languages </a></li>
+                    <li id="nav-menu-item-17551"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/geek/" class="menu-link  sub-menu-link">Mind the Geek </a></li>
+                    <li id="nav-menu-item-17552"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/web/" class="menu-link  sub-menu-link">Modern Web </a></li>
+                    <li id="nav-menu-item-17553"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/data/" class="menu-link  sub-menu-link">Big Data &#038; Machine
+                      Learning </a></li>
+                    <li id="nav-menu-item-17554"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/mobile/" class="menu-link  sub-menu-link">Mobile &#038; IOT </a></li>
+                    <li id="nav-menu-item-17556"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                      href="https://www.voxxed.com/category/arch/" class="menu-link  sub-menu-link">Architecture &#038; Security </a>
+                    </li>
 
+                  </ul>
+                </li>
+                <li id="nav-menu-item-445"
+                    class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent dropdown">
+                  <a href="https://www.voxxed.com/activity/" class="menu-link dropdown-toggle disabled main-menu-link"
+                     data-toggle="dropdown">Voxxians <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu menu-depth-1">
+                    <li id="nav-menu-item-446"
+                        class="sub-menu-item menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a
+                      href="https://www.voxxed.com/groups/" class="menu-link  sub-menu-link">Groups </a></li>
+
+                  </ul>
+                </li>
+                <li id="nav-menu-item-4530"
+                    class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a
+                  href="/events/list" class="menu-link  main-menu-link">Events </a></li>
+                <li id="nav-menu-item-2610"
+                    class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2603 current_page_item">
+                  <a href="https://www.voxxed.com/involved/" class="menu-link  main-menu-link">Get Involved </a></li>
+                <li id="nav-menu-item-428"
+                    class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><a
+                  href="https://www.voxxed.com/contact-us/" class="menu-link  main-menu-link">Contact Us </a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </nav>
+      </div><!-- #top-nav -->
+      <div id="headline" class="topnav-dark is-fixed-nav layout-4">
+        <div class="container">
+          <div class="row">
+            <div class="pathway col-md-6 col-sm-6 hidden-xs">
+              <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="https://www.voxxed.com/" rel="v:url"
+                                                                                     property="v:title">Home</a> \ <span
+                class="current">Voxxian {{speakerName}}</span></div><!-- .breadcrumbs -->                    </div>
+            <div class="social-links col-md-6 col-sm-6">
+              <div class="pull-right">
+
+
+                <a class="social-icon maincolor1 bordercolor1hover bgcolor1hover" href="mailto:info@voxxed.com" target="_blank"><i
+                  class="fa fa-envelope"></i></a>
+                <a class="social-icon maincolor1 bordercolor1hover bgcolor1hover" href="https://twitter.com/voxxed" target="_blank"><i
+                  class="fa fa-twitter"></i></a>
+                <a class="social-icon maincolor1 bordercolor1hover bgcolor1hover" href="https://www.youtube.com/c/devoxx2015"
+                   target="_blank"><i class="fa fa-youtube"></i></a>
+                <a class="search-toggle social-icon maincolor1 bordercolor1hover bgcolor1hover" href="#"><i
+                  class="fa fa-search"></i></a>
+                <div class="headline-search">
+                  <form class="dark-form" action="https://www.voxxed.com">
+                    <div class="input-group">
+                      <input type="text" name="s" class="form-control" placeholder="Search for videos">
+                      <span class="input-group-btn">
+                                            <button class="btn btn-default maincolor1 maincolor1hover" type="submit"><i
+                                              class="fa fa-search"></i></button>
+                                        </span>
+                    </div>
+                  </form>
+                </div><!--/heading-search-->
+              </div>
+
+            </div>
+          </div><!--/row-->
+
+        </div><!--/container-->
+      </div><!--/headline-->
+
+
+    </header>
+    <div class="blog-heading ">
+      <div class="container">
+        <h1>{{speakerName}}</h1>
+      </div>
+    </div><!--blog-heading-->
+    <div id="body">
+      <div class="container">
+        <div class="row">
+          <div id="content" class="col-md-9" role="main">
+            <article class="post-2603 page type-page status-publish has-post-thumbnail hentry">
+
+              <div class="content-single">
+                <h3><strong>Who We Are</strong></h3>
+                <p>Voxxed is a knowledge sharing platform, and overseer of Voxxed Days events. Each shares the same DNA as the Devoxx
+                  conferences, with a core focus on delivering top quality content for audiences local and global.</p>
+                <p>Content on Voxxed is generated by the developer community. Our categories reflect the most popular tracks types found
+                  at Voxxed Days and Devoxx conferences. You&#8217;ll be able to find videos from events, interviews and written
+                  articles that arm the busy the developer with knowledge that helps them improve and expand their experiences.</p>
+                <p>If you would like to get involved, please click the submit video button on the homepage and provide us some
+                  background info on it.</p>
+                <p>Here’s the whole Voxxed story:</p>
+
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="clearfix"></div>
+              </div>
+
+              <!--/item-content-->
+            </article>
+                      </div><!--#content-->
+          <div id="sidebar" class="col-md-3">
+            <div id="recent-posts-16" class=" no-border widget widget-border widget_recent_entries"><h2 class="widget-title maincolor2">
+              Recent Posts</h2>
+              <ul>
+                <li>
+                  <a href="https://www.voxxed.com/2017/12/moving-java-forward-faster/">Moving Java Forward Faster</a>
+                </li>
+                <li>
+                  <a href="https://www.voxxed.com/2017/12/deep-learning-fly/">(Deep) Learning to Fly</a>
+                </li>
+                <li>
+                  <a href="https://www.voxxed.com/2017/11/cern-from-an-it-perspective/">CERN, from an IT Perspective</a>
+                </li>
+                <li>
+                  <a href="https://www.voxxed.com/2017/10/ee4j-eclipse-enterprise-java/">EE4J &#8211; Eclipse Enterprise for Java</a>
+                </li>
+                <li>
+                  <a href="https://www.voxxed.com/2017/10/tic-tac-toe-alphago-playing-games-ai-machine-learning/">From Tic Tac Toe to
+                    AlphaGo: Playing games with AI and machine learning</a>
+                </li>
+              </ul>
+            </div>
+            <div id="tm_categories-3" class=" no-border widget widget-border tm_widget_categories"><h2 class="widget-title maincolor2">
+              Categories</h2>
+              <ul>
+                <style type="text/css" scoped="scoped">
+                  li.cat-item {
+                    width: 100% !important
+                  }
+                </style>
+                <li class="cat-item cat-item-37"><a href="https://www.voxxed.com/category/java/"
+                                                    title="View all posts filed under Java Language">Java Language</a><p>521 Posts</p></li>
+                <li class="cat-item cat-item-38"><a href="https://www.voxxed.com/category/m_c/"
+                                                    title="View all posts filed under Methodology &amp; Culture">Methodology &amp;Culture</a><p>373 Posts</p></li>
+                <li class="cat-item cat-item-40"><a href="https://www.voxxed.com/category/cloud/"
+                                                    title="View all posts filed under Cloud">Cloud</a><p>208 Posts</p></li>
+                <li class="cat-item cat-item-57"><a href="https://www.voxxed.com/category/prog/"
+                                                    title="View all posts filed under Programming Languages">Programming Languages</a><p>159 Posts</p></li>
+                <li class="cat-item cat-item-41"><a href="https://www.voxxed.com/category/geek/"
+                                                    title="View all posts filed under Mind the Geek">Mind the Geek</a><p>110 Posts</p></li>
+                <li class="cat-item cat-item-39"><a href="https://www.voxxed.com/category/web/"
+                                                    title="View all posts filed under Modern Web">Modern Web</a><p>82 Posts</p></li>
+                <li class="cat-item cat-item-3620"><a href="https://www.voxxed.com/category/mobile/"
+                                                      title="View all posts filed under Mobile &amp; IOT">Mobile &amp; IOT</a><p>72 Posts</p></li>
+                <li class="cat-item cat-item-3617"><a href="https://www.voxxed.com/category/data/"
+                                                      title="View all posts filed under Big Data &amp; Machine Learning">Big Data &amp;Machine Learning</a><p>69 Posts</p></li>
+                <li class="cat-item cat-item-3618"><a href="https://www.voxxed.com/category/server/"
+                                                      title="View all posts filed under Server Side Java">Server Side Java</a><p>55 Posts</p></li>
+                <li class="cat-item cat-item-3619"><a href="https://www.voxxed.com/category/arch/"
+                                                      title="View all posts filed under Architecture &amp; Security">Architecture &amp;Security</a><p>52 Posts</p></li>
+              </ul>
+            </div>
+          </div><!--#sidebar-->
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--/body-->
+    <footer class="dark-div">
+      <div id="bottom">
+        <div class="container">
+          <div class="row">
+            <div id="text-27" class=" no-border widget col-md-3 col-sm-6 widget_text">
+              <div class="textwidget"><p><img src="https://www.voxxed.com/wp-content/uploads/2014/10/Voxxed-WhiteLogo.png" alt="Voxxed">
+              </p>
+                <p>Voxxed is a knowledge sharing platform with the same DNA as the Devoxx conferences and vibrant collaboration with
+                  Voxxed Days events.</p>
+                <br>
+                The Old Church School, Butts Hill, Frome, Somerset. BA11 1HR United Kingdom
+                info@voxxed.com
+              </div>
+            </div>
+            <div id="text-28" class=" no-border widget col-md-3 col-sm-6 widget_text">
+              <div class="textwidget"></div>
+            </div>
+            <div id="text-29" class=" 1 widget col-md-3 col-sm-6 widget_text">
+              <div class="textwidget"></div>
+            </div>
+            <div id="text-14" class="  widget col-md-3 col-sm-6 widget_text"><h2 class="widget-title maincolor1">Hosted by
+              Clever-Cloud</h2>
+              <div class="textwidget">We like to thank <a href="https://www.clever-cloud.com/en/">Clever-Cloud</a> for hosting
+                Voxxed.com
+              </div>
+            </div>
+          </div><!--/row-->
+        </div><!--/container-->
+      </div><!--/bottom-->
+
+      <div id="bottom-nav">
+        <div class="container">
+          <div class="row">
+            <div class="copyright col-md-6">© 2014 - 2017 Voxxed.com</div>
+            <nav class="col-md-6">
+              <ul class="bottom-menu list-inline pull-right">
+                <li id="menu-item-17564" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17564"><a
+                  href="https://www.voxxed.com/category/java/">Java Language</a></li>
+                <li id="menu-item-17565" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17565"><a
+                  href="https://www.voxxed.com/category/m_c/">Methodology &#038; Culture</a></li>
+                <li id="menu-item-17566" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17566"><a
+                  href="https://www.voxxed.com/category/cloud/">Cloud</a></li>
+                <li id="menu-item-17567" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17567"><a
+                  href="https://www.voxxed.com/category/prog/">Programming Languages</a></li>
+                <li id="menu-item-17568" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17568"><a
+                  href="https://www.voxxed.com/category/geek/">Mind the Geek</a></li>
+                <li id="menu-item-17569" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17569"><a
+                  href="https://www.voxxed.com/category/web/">Modern Web</a></li>
+                <li id="menu-item-17570" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17570"><a
+                  href="https://www.voxxed.com/category/data/">Big Data &#038; Machine Learning</a></li>
+                <li id="menu-item-17571" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17571"><a
+                  href="https://www.voxxed.com/category/mobile/">Mobile &#038; IOT</a></li>
+                <li id="menu-item-17572" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17572"><a
+                  href="https://www.voxxed.com/category/server/">Server Side Java</a></li>
+                <li id="menu-item-17573" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17573"><a
+                  href="https://www.voxxed.com/category/arch/">Architecture &#038; Security</a></li>
+              </ul>
+            </nav>
+          </div><!--/row-->
+        </div><!--/container-->
+      </div>
+    </footer>
+    <div class="wrap-overlay"></div>
+  </div><!--wrap-->
+  <div id="off-canvas">
+    <div class="off-canvas-inner">
+      <nav class="off-menu">
+        <ul>
+          <li class="canvas-close"><a href="#"><i class="fa fa-times"></i> Close</a></li>
+          <li id="menu-item-581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-581"><a
+            href="https://www.voxxed.com/">Home</a></li>
+          <li id="menu-item-17557"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-17557"><a
+            href="/categories">Categories</a>
+            <ul class="sub-menu">
+              <li id="menu-item-17547" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17547"><a
+                href="https://www.voxxed.com/category/java/">Java Language</a></li>
+              <li id="menu-item-17548" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17548"><a
+                href="https://www.voxxed.com/category/m_c/">Methodology &#038; Culture</a></li>
+              <li id="menu-item-17549" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17549"><a
+                href="https://www.voxxed.com/category/cloud/">Cloud</a></li>
+              <li id="menu-item-17555" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17555"><a
+                href="https://www.voxxed.com/category/server/">Server Side Java</a></li>
+              <li id="menu-item-17550" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17550"><a
+                href="https://www.voxxed.com/category/prog/">Programming Languages</a></li>
+              <li id="menu-item-17551" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17551"><a
+                href="https://www.voxxed.com/category/geek/">Mind the Geek</a></li>
+              <li id="menu-item-17552" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17552"><a
+                href="https://www.voxxed.com/category/web/">Modern Web</a></li>
+              <li id="menu-item-17553" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17553"><a
+                href="https://www.voxxed.com/category/data/">Big Data &#038; Machine Learning</a></li>
+              <li id="menu-item-17554" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17554"><a
+                href="https://www.voxxed.com/category/mobile/">Mobile &#038; IOT</a></li>
+              <li id="menu-item-17556" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17556"><a
+                href="https://www.voxxed.com/category/arch/">Architecture &#038; Security</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-445"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-445"><a
+            href="https://www.voxxed.com/activity/">Voxxians</a>
+            <ul class="sub-menu">
+              <li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-446"><a
+                href="https://www.voxxed.com/groups/">Groups</a></li>
+            </ul>
+          </li>
+          <li id="menu-item-4530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4530"><a href="/events/list">Events</a>
+          </li>
+          <li id="menu-item-2610"
+              class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2603 current_page_item menu-item-2610">
+            <a href="https://www.voxxed.com/involved/">Get Involved</a></li>
+          <li id="menu-item-428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428"><a
+            href="https://www.voxxed.com/contact-us/">Contact Us</a></li>
+          <li class="menu-item"><a class="submit-video" href="#" data-toggle="modal" data-target="#submitModal">Submit Content</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div><!--/off-canvas-->
+  <div class="bg-ad">
+    <div class="container">
+      <div class="bg-ad-left">
+      </div>
+      <div class="bg-ad-right">
+      </div>
+    </div>
+  </div>
+</div><!--/body-wrap-->
+
+<a href="#top" id="gototop" class="notshow" title="Go to top"><i class="fa fa-angle-up"></i></a>
